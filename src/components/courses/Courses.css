@@ -1,0 +1,10 @@
+.container-courses{
+    display:flex;
+    justify-content: center;
+    background-color: aqua;
+    width: 100%;
+}
+.container-courses .content{
+    background-color: rgb(131, 192, 18);
+    width: 70%;
+}

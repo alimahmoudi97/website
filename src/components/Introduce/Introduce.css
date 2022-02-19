@@ -1,0 +1,29 @@
+.introduce{
+    display:flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(241, 135, 4);
+    height: 400px;
+}
+
+.introudction-text{
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    top: 130px;
+    /* right: 30px; */
+    left: 400px;
+    /* bottom: -100px; */
+    background-color: rgb(255, 255, 255);
+    width: 450px;
+    height: 150px;
+}
+
+.introudction-text h1,h3{
+    margin-left: 20px;
+    /* padding-top: 0; */
+}
+.introudction-text h3{
+    margin-top: -10px;
+}
