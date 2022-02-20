@@ -57,7 +57,7 @@ function Courses(){
                         // width:400,
                         height:400,
                         backgroundColor:'gray',
-                        border:1
+                        border:2
                     }}
                 >
                     <Box sx={{borderBottom:1,borderColor:'divider'}}>
