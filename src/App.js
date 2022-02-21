@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <Header/>
-         <Introduce/>
+      <Introduce/>
       <Courses/>
     </div>
 
