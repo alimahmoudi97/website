@@ -9,7 +9,7 @@ function App() {
     {/* <Header/>
     <Introduce/>
     <Courses/> */}
-    <div style={{width:'90%',marginLeft:70}}>
+    <div style={{width:1600,marginLeft:70}}>
       <SliderCart/>
     </div>    
   </div>
