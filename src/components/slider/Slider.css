@@ -1,11 +1,29 @@
- /* the slides */
- .slick-slide {
-    margin:27px;
-    overflow: hidden;
+.slick-slider {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    /* width: 98%; */
+    /* margin: 0 15px; */
 }
 
-/* the parent */
 .slick-list {
-    margin:-27px;
+    position: relative;
+    display: block !important;
     overflow: hidden;
+    padding: 25px !important;
+    width: 100%;
+    margin:0 10px;
+}
+.arrow-left{
+    position: relative;
+    left:40px;
+    z-index: 10;
+}
+.arrow-right{
+    position: relative;
+    right:30px;
+    z-index: 10;
 }
