@@ -3,7 +3,7 @@ import './Courses.css';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Slider from './../slider/Slider'
+import Slider from './../slider/Slider';
 
 function TabPanel(props){
 
@@ -57,7 +57,7 @@ function Courses(){
                         // width:400,
                         height:400,
                         backgroundColor:'gray',
-                        border:1
+                        border:2
                     }}
                 >
                     <Box sx={{borderBottom:1,borderColor:'divider'}}>
