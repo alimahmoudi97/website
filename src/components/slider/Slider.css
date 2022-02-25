@@ -19,11 +19,20 @@
 }
 .arrow-left{
     position: relative;
-    left:40px;
+    /* left:60px; */
     z-index: 10;
 }
 .arrow-right{
     position: relative;
-    right:30px;
+    /* right:50px; */
     z-index: 10;
+}
+.item-wrap{
+    background-color: bisque;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border: 2px solid;
+    border-radius: 15px;
 }

@@ -1,95 +1,33 @@
 import React from 'react';
-import Slider from "react-slick";
-
-import "./../../../node_modules/slick-carousel/slick/slick.css"; 
-import "./../../../node_modules/slick-carousel/slick/slick-theme.css";
-
-import {BsFillArrowLeftCircleFill,BsFillArrowRightCircleFill} from 'react-icons/bs';
-
-import CartCourse from './../cart_course/CartCourse';
-import './Slider.css';
+import { Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
+import "swiper/swiper.scss";
+import "swiper/modules/navigation/navigation.scss";
+import "swiper/modules/pagination/pagination.scss";
 function SliderCart(){
 
-    const SlickArrowLeft=(props)=>{
-        const {className,style,onClick,currentSlide}=props;
-        return(
-            // <img  src='./../../assets/left_icon.jpg' alt='prevArrow' {...props}/>
-            <div onClick={onClick} className="arrow-left">
-                <BsFillArrowLeftCircleFill style={{width:50,height:50}} />
-            </div>
-            
-        )
-        
-    };
-    const SlickArrowRight=(props)=>{
-        const {className,style,onClick,currentSlide}=props;
-        return(
-            // <img  src='./../../assets/left_icon.jpg' alt='prevArrow' {...props}/>
-            <div onClick={onClick} className="arrow-right">
-                <BsFillArrowRightCircleFill style={{width:50,height:50}}/>
-            </div>
-            
-        )
-        
-    };
-    const settings = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        initialSlide: 0,
-        swipeToSlide:false,
-        // centerMode:true,
-        // dotsClass:'dots',
-        // vertical:false,
-        // className:"center",
-        // centerPadding: "160px",
-        prevArrow:<SlickArrowLeft/>,
-        nextArrow:<SlickArrowRight/>,
-      };
     return(
-            
-            <Slider {...settings} >
-                {[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15].map(()=>{
-                    return(
-                        <div>
-                            <CartCourse/>
-                        </div>
-                    )
-                })}
-                <div>
-                    <CartCourse/>
-                </div>
-                <div>
-                    <CartCourse/>
-                </div>
-                <div>
-                    <CartCourse/>
-                </div>
-                <div>
-                    <CartCourse/>
-                </div>
-                <div>
-                    <CartCourse/>
-                </div>
-                <div>
-                    <CartCourse/>
-                </div>
-                <div>
-                    <CartCourse/>
-                </div>
-                <div>
-                    <CartCourse/>
-                </div>
-                <div>
-                    <CartCourse/>
-                </div>
-                <div>
-                    <CartCourse/>
-                </div>
-            </Slider>
-        
+        <div>
+            <Swiper
+                    slidesPerView={3}
+                    spaceBetween={30}
+                    pagination={{
+                    clickable: true,
+                    }}
+                    // modules={[Pagination]}
+                    
+                >
+                    <SwiperSlide>Slide 1</SwiperSlide>
+                    <SwiperSlide>Slide 2</SwiperSlide>
+                    <SwiperSlide>Slide 3</SwiperSlide>
+                    <SwiperSlide>Slide 4</SwiperSlide>
+                    <SwiperSlide>Slide 5</SwiperSlide>
+                    <SwiperSlide>Slide 6</SwiperSlide>
+                    <SwiperSlide>Slide 7</SwiperSlide>
+                    <SwiperSlide>Slide 8</SwiperSlide>
+                    <SwiperSlide>Slide 9</SwiperSlide>
+                </Swiper>
+        </div>
     )
 }
 
