@@ -30,7 +30,11 @@ function TabPanel(props){
                     <Box sx={{ p: 3}}>
                         {value+1}
                     </Box>
-                    <Slider/>
+                    
+                    <div className="slider">
+                         <Slider/>
+                    </div>
+                    
                 </div>
                 
             )}
@@ -55,7 +59,7 @@ function Courses(){
                 <Box
                     sx={{
                         // width:400,
-                        height:400,
+                        // height:400,
                         backgroundColor:'gray',
                         border:2
                     }}

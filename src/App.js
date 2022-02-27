@@ -5,13 +5,13 @@ import CartCourse from './components/cart_course/CartCourse';
 import SliderCart from './components/slider/Slider';
 function App() {
   return (
-    <div style={{backgroundColor:'gray'}}>
-    {/* <Header/>
-    <Introduce/>
-    <Courses/> */}
-    <div style={{width:1600,marginLeft:70}}>
+    <div>
+      <Header/>
+      <Introduce/>
+      <Courses/>
+    {/* <div style={{width:1600,marginLeft:70}}>
       <SliderCart/>
-    </div>    
+    </div>     */}
   </div>
 
   );

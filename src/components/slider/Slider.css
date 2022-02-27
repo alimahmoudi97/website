@@ -60,6 +60,5 @@ body {
 
 .slider-content{
   display:flex;
-  background-color:aqua;
   justify-content: center;
 }
