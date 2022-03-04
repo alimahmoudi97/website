@@ -5,6 +5,11 @@ import CartCourse from './components/cart_course/CartCourse';
 import SliderCart from './components/slider/Slider';
 import Categories from './components/categories/Categories';
 import TopicCategories from './components/categories/TopicCategories';
+import InstructorCart from './components/Instructor_Cart/InstructorCart.js';
+import UdemyBusinessCart from './components/Udemy_business_Cart/UdemyBusinessCart.js';
+import FindOutCart from './components/Find_Out_Cart/Find_Out_Cart.js';
+import TrustedCompanies from './components/TrustedCompanies/Trusted_Companies.js';
+import Footer from './components/footer/Footer.js';
 import './App.css';
 function App() {
   return (
@@ -20,6 +25,11 @@ function App() {
       <Categories/>
       <p className="students-view-text">Featured topics by category</p>
       <TopicCategories/>
+      <InstructorCart/>
+      <UdemyBusinessCart/>
+      <TrustedCompanies/>
+      <FindOutCart/>
+      <Footer/>
   </div>
 
   );

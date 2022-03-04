@@ -1,0 +1,14 @@
+.trusted-container{
+    display: flex;
+    justify-content: center;
+}
+.trusted-content p{
+    text-align: center;
+    font-size:30px;
+    font-weight: bolder;
+}
+.trusted-companies img{
+    /* width: 100px; */
+    /* height: 100px; */
+    margin: 50px;
+}
