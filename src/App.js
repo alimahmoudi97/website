@@ -23,8 +23,9 @@ function App() {
       </div>
       <p className="students-view-text">Top Categories</p>
       <Categories/>
-      <p className="students-view-text">Featured topics by category</p>
-      <TopicCategories/>
+      <div style={{marginTop:50,backgroundColor:'white'}}>
+        <TopicCategories/>
+      </div>
       <InstructorCart/>
       <UdemyBusinessCart/>
       <TrustedCompanies/>
