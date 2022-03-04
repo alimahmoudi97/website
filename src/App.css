@@ -1,0 +1,12 @@
+.students-view{
+    background-color: blueviolet;
+    width: 80%;
+    margin-left: 200px;
+}
+.students-view-text{
+    /* background-color: blueviolet; */
+    /* width: 80%; */
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 238px;
+}
