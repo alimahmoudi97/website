@@ -1,0 +1,7 @@
+.cart-buy-course{
+    display:flex;
+    justify-content:end;
+    background-color: rgb(255, 255, 255);
+    width:340px;
+    height:480px;
+}
