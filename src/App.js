@@ -12,15 +12,17 @@ import TrustedCompanies from './components/TrustedCompanies/Trusted_Companies.js
 import Footer from './components/footer/Footer.js';
 import './App.css';
 import CartBuy from './components/cart_buy/CartBuy';
+
 function App() {
   return (
     <div>
-      {/* <Header/>
+      <Header/>
       <Introduce/>
       <Courses/>
       <p className="students-view-text">Students are viewing</p>
       <div className="students-view">
         <SliderCart/>
+        
       </div>
       <p className="students-view-text">Top Categories</p>
       <Categories/>
@@ -31,8 +33,8 @@ function App() {
       <UdemyBusinessCart/>
       <TrustedCompanies/>
       <FindOutCart/>
-      <Footer/> */}
-      <CartBuy/>
+      <Footer/>
+      
   </div>
 
   );

@@ -3,8 +3,11 @@ html,
 body {
   position: relative;
   height: 100%;
+  
 }
-
+:root{
+  --margin:300px;
+}
 body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -61,4 +64,21 @@ body {
 .slider-content{
   display:flex;
   justify-content: center;
+}
+
+.cart-course-slide{
+  position: relative;
+}
+
+.cart-buy-course{
+  /* display: none; */
+  /* visibility: hidden; */
+  /* position:absolute; */
+  /* width:40%; */
+  z-index:50;
+  /* margin-left: var(--margin); */
+  /* left:650px; */
+}
+.cart-buy-course-hidden{
+  visibility: hidden;
 }
