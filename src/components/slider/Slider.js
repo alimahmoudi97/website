@@ -10,6 +10,7 @@ import {BsFillArrowLeftCircleFill,BsFillArrowRightCircleFill} from 'react-icons/
 import { usePopper } from 'react-popper';
 import CartCourse from './../cart_course/CartCourse';
 import CartBuy from './../cart_buy/CartBuy.js';
+import { offset } from '@popperjs/core';
 
 SwiperCore.use([Navigation]);
 function SliderCart(){
@@ -25,14 +26,16 @@ function SliderCart(){
     const [referenceElement2, setReferenceElement2] = React.useState(null);
     const [popperElement2, setPopperElement2] = React.useState(null);
     const [arrowElement, setArrowElement] = React.useState(null);
+    const [arrowElement1, setArrowElement1] = React.useState(null);
+    const [arrowElement2, setArrowElement2] = React.useState(null);
     const { styles, attributes } = usePopper(referenceElement, popperElement, {
-      modifiers: [{ name: 'arrow', options: { element: arrowElement}}],placement:'right'
+      modifiers: [{ name: 'arrow', options: {element: arrowElement }}],placement:'right'
     });
     const st1=usePopper(referenceElement1, popperElement1, {
-      modifiers: [{ name: 'arrow', options: { element: arrowElement }}],placement:'right'
+      modifiers: [{ name: 'arrow', options: {element: arrowElement1 }}],placement:'right'
     });
     const st2=usePopper(referenceElement2, popperElement2, {
-      modifiers: [{ name: 'arrow', options: { element: arrowElement }}],placement:'right'
+      modifiers: [{ name: 'arrow', options: {element: arrowElement2 }}],placement:'right'
     });
     return(
         <div className="slider-content">
@@ -96,9 +99,9 @@ function SliderCart(){
                 </Swiper>
                 {/* <BsFillArrowRightCircleFill ref={navigationNextRef} style={{zIndex:1,backgroundColor:'red',width:50,height:50}}/> */}
                 <div ref={navigationNextRef} style={{position:'relative',top:120,right:20,zIndex:1,color:'green',width:50,height:50}}> <BsFillArrowRightCircleFill style={{width:'100%',height:'100%'}}/> </div>
-                <div className={(showCartIndex===0 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement} style={styles.popper} {...attributes.popper}><CartBuy/></div>
-                <div className={(showCartIndex===1 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement1} style={st1.styles.popper} {...st1.attributes.popper}><CartBuy/></div>
-                <div className={(showCartIndex===2 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement2} style={st2.styles.popper} {...st2.attributes.popper}><CartBuy/></div>
+                <div id="tooltip" className={(showCartIndex===0 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement} style={styles.popper} {...attributes.popper}><CartBuy/><div id="arrow" ref={setArrowElement} style={styles.arrow} data-popper-arrow/></div>
+                <div id="tooltip" className={(showCartIndex===1 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement1} style={st1.styles.popper} {...st1.attributes.popper}><CartBuy/><div id="arrow" ref={setArrowElement1} style={st1.styles.arrow} data-popper-arrow/></div>
+                <div id="tooltip" className={(showCartIndex===2 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement2} style={st2.styles.popper} {...st2.attributes.popper}><CartBuy/><div id="arrow" ref={setArrowElement2} style={st2.styles.arrow} data-popper-arrow/></div>
         </div>
     )
 }

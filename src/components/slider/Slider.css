@@ -82,3 +82,36 @@ body {
 .cart-buy-course-hidden{
   visibility: hidden;
 }
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: inherit;
+  border-radius: 2px;
+}
+
+#arrow {
+  visibility: hidden;
+}
+
+#arrow::before {
+  visibility: visible;
+  content: '';
+  transform: rotate(45deg);
+}
+#tooltip[data-popper-placement^='top'] > #arrow {
+  bottom: -4px;
+}
+
+#tooltip[data-popper-placement^='bottom'] > #arrow {
+  top: -4px;
+}
+
+#tooltip[data-popper-placement^='left'] > #arrow {
+  right: -4px;
+}
+
+#tooltip[data-popper-placement^='right'] > #arrow {
+  left: -4px;
+}
