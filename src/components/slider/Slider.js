@@ -10,13 +10,15 @@ import {BsFillArrowLeftCircleFill,BsFillArrowRightCircleFill} from 'react-icons/
 import { usePopper } from 'react-popper';
 import CartCourse from './../cart_course/CartCourse';
 import CartBuy from './../cart_buy/CartBuy.js';
-import { offset } from '@popperjs/core';
+
 
 SwiperCore.use([Navigation]);
 function SliderCart(){
-    const [offsetCart,setOffsetCart]=React.useState(0); 
-    const navigationPrevRef = React.useRef(null)
-    const navigationNextRef = React.useRef(null)
+    const arrayData=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+    const [offsetCart,setOffsetCart]=React.useState(0);
+    const [popper,setPopper]=React.useState([]); 
+    const navigationPrevRef = React.useRef(null);
+    const navigationNextRef = React.useRef(null);
     const [showCartBuy,setShowCartBuy]=React.useState(false);
     const [showCartIndex,setShowCartIndex]=React.useState(0);
     const [referenceElement, setReferenceElement] = React.useState(null);
@@ -55,10 +57,11 @@ function SliderCart(){
     const st5=usePopper(referenceElement5, popperElement5, {
       modifiers: [{ name: 'arrow', options: {element: arrowElement5 }}],placement:'right'
     });
+    
     return(
         <div className="slider-content">
           {/* <BsFillArrowLeftCircleFill ref={navigationPrevRef} style={{zIndex:1,backgroundColor:'red',width:50,height:50}}/> */}
-          <div ref={navigationPrevRef} style={{position:'relative',top:120,left:20,zIndex:2,color:'green',width:50,height:50}} onClick={()=>{if(offsetCart<0){setOffsetCart(0)}else{setOffsetCart(offsetCart-1)};console.log(offsetCart)}}> <BsFillArrowLeftCircleFill style={{width:'100%',height:'100%'}}/> </div>
+          <div ref={navigationPrevRef} style={{position:'relative',top:120,left:20,zIndex:2,width:50,height:50}} onClick={()=>{if(offsetCart<=0){setOffsetCart(0)}else{setOffsetCart(offsetCart-1)};console.log(offsetCart)}}> <BsFillArrowLeftCircleFill style={{width:'100%',height:'100%'}}/> </div>
             <Swiper
                slidesPerView={5}
                spaceBetween={25}
@@ -87,7 +90,7 @@ function SliderCart(){
               }}
                modules={[Navigation]}
                 >
-
+                    {/* {arrayData.map((item,index)=>{return <SwiperSlide><div className="cart-course-slide" ref={setReferenceElement}  onMouseEnter={()=>{setShowCartBuy(true);setShowCartIndex(0)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartCourse/></div></SwiperSlide>})} */}
                     <SwiperSlide><div className="cart-course-slide" ref={setReferenceElement}  onMouseEnter={()=>{setShowCartBuy(true);setShowCartIndex(0)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartCourse/></div></SwiperSlide>
                     <SwiperSlide><div className="cart-course-slide" ref={setReferenceElement1}  onMouseEnter={()=>{setShowCartBuy(true);setShowCartIndex(1)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartCourse/></div></SwiperSlide>
                     <SwiperSlide><div className="cart-course-slide" ref={setReferenceElement2}  onMouseEnter={()=>{setShowCartBuy(true);setShowCartIndex(2)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartCourse/></div></SwiperSlide>
@@ -102,13 +105,13 @@ function SliderCart(){
                     <SwiperSlide><CartCourse/></SwiperSlide>
                 </Swiper>
                 {/* <BsFillArrowRightCircleFill ref={navigationNextRef} style={{zIndex:1,backgroundColor:'red',width:50,height:50}}/> */}
-                <div ref={navigationNextRef} style={{position:'relative',top:120,right:20,zIndex:1,color:'green',width:50,height:50}} onClick={()=>{if(offsetCart<0){setOffsetCart(0)}else{setOffsetCart(offsetCart+1)};console.log(offsetCart)}}> <BsFillArrowRightCircleFill style={{width:'100%',height:'100%'}}/> </div>
+                <div ref={navigationNextRef} style={{position:'relative',top:120,right:20,zIndex:1,width:50,height:50}} onClick={()=>{setOffsetCart(offsetCart+1);console.log(offsetCart)}}> <BsFillArrowRightCircleFill style={{width:'100%',height:'100%'}}/> </div>
                 <div id="tooltip" className={(showCartIndex===0 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement} style={styles.popper} {...attributes.popper} onMouseEnter={()=>{setShowCartBuy(true);setShowCartIndex(0)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartBuy/><div id="arrow" ref={setArrowElement} style={styles.arrow} data-popper-arrow/></div>
-                <div id="tooltip" className={(showCartIndex===1 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement1} style={st1.styles.popper} {...st1.attributes.popper} onMouseEnter={()=>{setShowCartBuy(true);setShowCartIndex(1)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartBuy/><div id="arrow" ref={setArrowElement1} style={st1.styles.arrow} data-popper-arrow/></div>
-                <div id="tooltip" className={(showCartIndex===2 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement2} style={st2.styles.popper} {...st2.attributes.popper} onMouseEnter={()=>{setShowCartBuy(true);setShowCartIndex(2)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartBuy/><div id="arrow" ref={setArrowElement2} style={st2.styles.arrow} data-popper-arrow/></div>
-                <div id="tooltip" className={(showCartIndex===3 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement3} style={st3.styles.popper} {...st3.attributes.popper} onMouseEnter={()=>{setShowCartBuy(true);setShowCartIndex(3)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartBuy/><div id="arrow" ref={setArrowElement3} style={st3.styles.arrow} data-popper-arrow/></div>
-                <div id="tooltip" className={(showCartIndex===4 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement4} style={st4.styles.popper} {...st4.attributes.popper} onMouseEnter={()=>{setShowCartBuy(true);setShowCartIndex(4)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartBuy/><div id="arrow" ref={setArrowElement4} style={st4.styles.arrow} data-popper-arrow/></div>
-                <div id="tooltip" className={(showCartIndex===5 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement5} style={st5.styles.popper} {...st5.attributes.popper} onMouseEnter={()=>{setShowCartBuy(true);setShowCartIndex(5)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartBuy/><div id="arrow" ref={setArrowElement5} style={st5.styles.arrow} data-popper-arrow/></div>
+                <div id="tooltip" className={(showCartIndex===1 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement1} style={st1.styles.popper} {...st1.attributes.popper} onMouseEnter={()=>{setShowCartBuy(true)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartBuy/><div id="arrow" ref={setArrowElement1} style={st1.styles.arrow} data-popper-arrow/></div>
+                <div id="tooltip" className={(showCartIndex===2 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement2} style={st2.styles.popper} {...st2.attributes.popper} onMouseEnter={()=>{setShowCartBuy(true)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartBuy/><div id="arrow" ref={setArrowElement2} style={st2.styles.arrow} data-popper-arrow/></div>
+                <div id="tooltip" className={(showCartIndex===3 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement3} style={st3.styles.popper} {...st3.attributes.popper} onMouseEnter={()=>{setShowCartBuy(true)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartBuy/><div id="arrow" ref={setArrowElement3} style={st3.styles.arrow} data-popper-arrow/></div>
+                <div id="tooltip" className={(showCartIndex===4 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement4} style={st4.styles.popper} {...st4.attributes.popper} onMouseEnter={()=>{setShowCartBuy(true)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartBuy/><div id="arrow" ref={setArrowElement4} style={st4.styles.arrow} data-popper-arrow/></div>
+                <div id="tooltip" className={(showCartIndex===5 && showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement5} style={st5.styles.popper} {...st5.attributes.popper} onMouseEnter={()=>{setShowCartBuy(true)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartBuy/><div id="arrow" ref={setArrowElement5} style={st5.styles.arrow} data-popper-arrow/></div>
         </div>
     )
 }
