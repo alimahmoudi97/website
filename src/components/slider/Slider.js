@@ -62,11 +62,20 @@ function SliderCart(){
               }}
                modules={[Navigation]}
                 >
-                    {arrayData.map((item,index)=>{return <SwiperSlide><div className="cart-course-slide" ref={(showCartIndex===index) ? setReferenceElement : null}  onMouseEnter={()=>{setShowCartBuy(true);setShowCartIndex(index)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartCourse/></div></SwiperSlide>})}
+                    {arrayData.map((item,index)=>{
+                      return <SwiperSlide>
+                                <div className="cart-course-slide" ref={(showCartIndex===index) ? setReferenceElement : null}  onMouseEnter={()=>{setShowCartBuy(true);setShowCartIndex(index)}} onMouseLeave={()=>{setShowCartBuy(false)}}>
+                                  <CartCourse/>
+                                </div>
+                              </SwiperSlide>
+                    })}
                 </Swiper>
                 {/* <BsFillArrowRightCircleFill ref={navigationNextRef} style={{zIndex:1,backgroundColor:'red',width:50,height:50}}/> */}
                 <div ref={navigationNextRef} style={{position:'relative',top:120,right:20,zIndex:1,width:50,height:50}} onClick={()=>{setOffsetCart(offsetCart+1);console.log(offsetCart)}}> <BsFillArrowRightCircleFill style={{width:'100%',height:'100%'}}/> </div>
-                <div id="tooltip" className={(showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement} style={styles.popper} {...attributes.popper} onMouseEnter={()=>{setShowCartBuy(true);setShowCartIndex(0)}} onMouseLeave={()=>{setShowCartBuy(false)}}><CartBuy/><div id="arrow" ref={setArrowElement} style={styles.arrow} data-popper-arrow/></div>
+                <div id="tooltip" className={(showCartBuy) ? "cart-buy-course" :"cart-buy-course-hidden"} ref={setPopperElement} style={styles.popper} {...attributes.popper} onMouseEnter={()=>{setShowCartBuy(true)}} onMouseLeave={()=>{setShowCartBuy(false)}}>
+                  <CartBuy/>
+                  <div id="arrow" ref={setArrowElement} style={styles.arrow} data-popper-arrow/>
+                </div>
         </div>
     )
 }
