@@ -11,7 +11,7 @@ function Categories(){
     const[isHoverSubThree,setHoverSubThree]=React.useState(false);
     return(
         <ContextCategories.Provider value={{subOne:[isHoverSubOne,serHoverSubOne],subTwo:[isHoverSubTwo,serHoverSubTwo],subThree:[isHoverSubThree,setHoverSubThree]}}>
-            <div id="A" onMouseEnter={()=>{setHoverSubThree(false); document.getElementById("A").style.setProperty('--color','blue');document.getElementById("A").style.setProperty('--display-block','block')}}>
+            <div id="A" onMouseEnter={()=>{setHoverSubThree(false);document.getElementById("A").style.setProperty('--display-block','block')}}>
                 <p className="categories">
                     Categories
                     <div className="cart">

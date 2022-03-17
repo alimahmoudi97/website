@@ -1,6 +1,6 @@
 #A {
     --display-blook:none;
-    --color:rgb(167, 231, 181);
+    --color:rgb(255, 255, 255);
 }
 .cart,.categorie-sub-one{
     display: var(--display-blook);
