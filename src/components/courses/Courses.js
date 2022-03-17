@@ -1,5 +1,6 @@
 import React from 'react';
 import './Courses.css';
+import {styled} from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -56,42 +57,38 @@ function Courses(){
             <div className="content">
                 <p style={{fontSize:25}}>A broad selection of courses</p>
                 <p>Choose from 183,000 online video courses with new additions published every month</p>
-                <Box
-                    sx={{
-                        // width:400,
-                        // height:400,
-                        backgroundColor:'gray',
-                        border:2
-                    }}
-                >
+                <Box>
                     <Box sx={{borderBottom:1,borderColor:'divider'}}>
-                        <Tabs value={value} onChange={handleChange}>
-                            <Tab label="Item 1"/>
-                            <Tab label="Item 2"/>
-                            <Tab label="Item 3"/>
-                            <Tab label="Item 4"/>
-                            <Tab label="Item 5"/>
-                            <Tab label="Item 6">Hi</Tab>
-                        </Tabs>
+                        <AntTabs value={value} onChange={handleChange} textColor="secondary">
+                            <AntTab label="Item 1"/>
+                            <AntTab label="Item 2"/>
+                            <AntTab label="Item 3"/>
+                            <AntTab label="Item 4"/>
+                            <AntTab label="Item 5"/>
+                            <AntTab label="Item 6">Hi</AntTab>
+                        </AntTabs>
                     </Box>
-                    <TabPanel value={value} index={0}>
-                            Item 1
-                        </TabPanel>
-                        <TabPanel value={value} index={1}>
-                            Item 2
-                        </TabPanel>
-                        <TabPanel value={value} index={2}>
-                            Item 3
-                        </TabPanel>
-                        <TabPanel value={value} index={3}>
-                            Item 4
-                        </TabPanel>
-                        <TabPanel value={value} index={4}>
-                            Item 5
-                        </TabPanel>
-                        <TabPanel value={value} index={5}>
-                            Item 6
-                        </TabPanel>
+                    <Box sx={{border:1}}>
+                        <TabPanel value={value} index={0}>
+                                Item 1
+                            </TabPanel>
+                            <TabPanel value={value} index={1}>
+                                Item 2
+                            </TabPanel>
+                            <TabPanel value={value} index={2}>
+                                Item 3
+                            </TabPanel>
+                            <TabPanel value={value} index={3}>
+                                Item 4
+                            </TabPanel>
+                            <TabPanel value={value} index={4}>
+                                Item 5
+                            </TabPanel>
+                            <TabPanel value={value} index={5}>
+                                Item 6
+                            </TabPanel>
+                    </Box>
+                       
                 </Box>
             </div>
             
@@ -101,3 +98,23 @@ function Courses(){
 }
 
 export default Courses;
+
+const AntTabs = styled(Tabs)({
+    // borderBottom: '1px solid #e8e8e8',
+    '& .MuiTabs-indicator': {
+      backgroundColor: 'rgb(255, 255, 255,0)',
+    },
+  });
+
+const AntTab = styled((props) => <Tab disableRipple {...props} />)(({ theme }) => ({
+    color: '#4d4d4d',
+    '&:hover': {
+      color: 'black',
+      fontSize:18
+    },
+    '&.Mui-selected': {
+      color: 'black',
+      fontWeight: theme.typography.fontWeightMedium,
+    },
+
+  }));

@@ -1,6 +1,6 @@
 .header{
     display:flex;
-    background-color: aquamarine;
+    background-color: rgb(236, 250, 245);
     /* align-items: center; */
     justify-content:space-around;
     align-items:center;
@@ -11,7 +11,7 @@
     /* margin-top: 10px; */
 }
 .div-text{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     /* text-align:center; */
     height:60px;
     display: flex;
@@ -27,18 +27,18 @@
     /* align-self:center; */
     /* margin-top: 30px; */
     /* padding: 0; */
-    background-color: bisque;
+    /* background-color: bisque; */
     align-items: center;
 }
 .logo img{
     /* align-self:center; */
-    background-color: brown;
+    /* background-color: brown; */
     /* height:100%; */
     /* width: 100%; */
 }
 
 .div-categories{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     height: 70px;
     margin-left: 10px;
     margin-right: 10px;
@@ -46,7 +46,7 @@
     align-items:center;
 }
 .div-categories .categories{
-    background-color:bisque;
+    /* background-color:bisque; */
     /* align-self:baseline; */
     height: 70px;
     display:flex;
