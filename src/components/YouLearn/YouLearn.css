@@ -1,0 +1,14 @@
+.you-learn-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.you-learn-content-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 20px;
+}
+.you-learn-grid-item{
+    margin-left: 30px;
+    margin-right: 30px;
+}

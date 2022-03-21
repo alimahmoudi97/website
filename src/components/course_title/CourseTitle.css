@@ -1,0 +1,8 @@
+.container-course-title{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(32, 29, 29);
+}
+.course-title-text p{
+    color: 'white';
+}
