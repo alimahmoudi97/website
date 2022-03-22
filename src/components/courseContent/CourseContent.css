@@ -1,5 +1,21 @@
 .course-content-container{
     display: flex;
     justify-content: center;
-
+}
+.course-panale-colasp{
+    display: none;
+}
+.course-panale-expand{
+    display: block;
+    background-color: rgb(209, 171, 171);
+}
+.course-panel-section{
+    background-color: rgb(139, 139, 139);
+    border-bottom: 1px solid;
+    cursor:pointer;
+}
+.course-panels{
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
 }
