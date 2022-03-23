@@ -19,3 +19,14 @@
     border-left: 1px solid;
     border-right: 1px solid;
 }
+.btn-show-more{
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #F5F5F5;
+    height: 30px;
+    border: 1px solid;
+}
+.btn-show-more:hover{
+    background-color: #cecdcd;
+}

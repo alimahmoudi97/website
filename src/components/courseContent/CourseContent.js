@@ -34,7 +34,8 @@ function CourseContent() {
                     })
                 }
               </div>
-            <button onClick={()=>{setItemsToShow(data.length)}}>Show More</button>
+            {/* <button style={{backgroundColor:'red'}} onClick={()=>{setItemsToShow(data.length)}}>Show More</button> */}
+            <div className="btn-show-more" onClick={()=>{setItemsToShow(data.length)}}><p style={{margin:0}}>Show More</p></div>
         </div>
         
     </div>
