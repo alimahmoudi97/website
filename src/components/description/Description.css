@@ -1,0 +1,24 @@
+:root{
+    --max-height-contents:250px;
+    --overflow-contents:hidden;
+}
+.description-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+.description-contents{
+    max-height: var(--max-height-contents);
+    overflow: var(--overflow-contents);
+}
+.fade-bottom-contents{
+    position: absolute;
+    content: "";
+    /* bottom: 0; */
+    width: 35%;
+    height: 50px;
+    bottom: 20px;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgb(255, 255, 255,1) 90%);
+    pointer-events: none;
+}

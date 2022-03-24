@@ -1,0 +1,8 @@
+.requirments-course{
+    display: flex;
+    justify-content: center;
+}
+.lsit-requirments-course ul li{
+    /* padding: 0; */
+    margin-left: -18px;
+}
