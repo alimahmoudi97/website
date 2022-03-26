@@ -1,0 +1,9 @@
+.bought-together-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.bought-together-cart-container{
+    display: flex;
+    justify-content: center;
+}

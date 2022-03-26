@@ -1,5 +1,6 @@
 import React from 'react';
-import CourseComparison from '../course-comparison/CourseComparison';
+import BoughtTogether from '../bought-togehter/BoughtTogether';
+import BoughtTogetherCart from '../bought-togehter/BoughtTogetherCart';
 import CourseContent from '../courseContent/CourseContent';
 import CourseTitle from '../course_title/CourseTitle';
 import Description from '../description/Description';
@@ -19,7 +20,8 @@ function CourseDetails() {
         <Requirments/>
         <Description/>
         <StudentsAlsoBought/>
-        {/* <CourseComparison/> */}
+        <BoughtTogether/>
+        {/* <BoughtTogetherCart/> */}
     </div>
   )
 }
