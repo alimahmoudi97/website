@@ -1,4 +1,20 @@
 .student-also-bought-container{
     display: flex;
     justify-content: center;
+    /* background-color: aqua; */
+}
+.student-also-bought-courses{
+    width: 100%;
+}
+.student-also-bought-courses .line{
+    border: 1px solid;
+    margin-top: 10px;
+}
+.btn-show-more-students-bought{
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #F5F5F5;
+    height: 30px;
+    border: 1px solid;
 }

@@ -5,14 +5,14 @@ function CourseComparison() {
   return (
     <div className="course-comparison-container">
       <div className="course-comarison-image">
-        <img style={{height:'100%',width:'100%'}} src="https://wallpapershome.com/images/pages/ico_h/23795.jpg"/>
+        <img style={{height:80,width:80}} src="https://wallpapershome.com/images/pages/ico_h/23795.jpg"/>
       </div>
       <div className="course-comarison-description">
-        <div style={{marginLeft:10}}>
-            <p style={{fontSize:20,fontWeight:'bold'}}>
+        <div style={{width:300,marginLeft:10}}>
+            <p style={{fontSize:16,fontWeight:'bold',marginTop:0}}>
               Python for Beginners - Learn Programming from scratch
             </p>
-            <p style={{marginTop:40}}>
+            <p>
               3 totla hours Update 6/2018
             </p>
         </div>
