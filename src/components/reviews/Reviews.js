@@ -62,9 +62,9 @@ function Reviews() {
             </div>
             {
                     (isShowMore) ?
-                        <div className="btn-show-more-students-bought" onClick={()=>{setItemsToShow(data.length);setShowMore(false)}}><p style={{margin:0}}>Show More</p></div>
+                        <div className="btn-show-more-students-bought" onClick={()=>{setItemsToShow(data.length);setShowMore(false)}}><p style={{margin:0}}>Show More Reviews</p></div>
                     :
-                        <div className="btn-show-more-students-bought" onClick={()=>{setItemsToShow(5);setShowMore(true)}}><p style={{margin:0}}>Show Less</p></div>
+                        <div className="btn-show-more-students-bought" onClick={()=>{setItemsToShow(5);setShowMore(true)}}><p style={{margin:0}}>Show Less Reviews</p></div>
             }
         </div>
     </div>
