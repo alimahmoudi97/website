@@ -1,0 +1,7 @@
+.student-feedback-container{
+    display: flex;
+    justify-content: center;
+}
+.student-feedback-rate{
+    display: flex;
+}
