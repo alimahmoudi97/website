@@ -13,24 +13,30 @@ import StudentFeedback from '../student-feedback/StudentFeedback';
 import StudentsAlsoBought from '../students-also-bought/StudentsAlsoBought';
 import YouLearn from '../YouLearn/YouLearn.js';
 import Footer from '../footer/Footer';
+import PreviewCourseCart from '../preview-course-cart/PreviewCourseCart';
 
 function CourseDetails() {
   return (
     <div>
         <Header/>
-        <CourseTitle/>
-        <YouLearn/>
-        <CourseContent/>
-        <Requirments/>
-        <Description/>
-        <StudentsAlsoBought/>
-        <BoughtTogether/>
-        <Instructors/>
-        <StudentFeedback/>
-        <Reviews/>
-        <Footer/>
-        {/* <InstructorInfo/> */}
-        {/* <BoughtTogetherCart/> */}
+        <div style={{display:'flex'}}>
+          <div>
+            <CourseTitle/>
+            <YouLearn/>
+            <CourseContent/>
+            <Requirments/>
+            <Description/>
+            <StudentsAlsoBought/>
+            <BoughtTogether/>
+            <Instructors/>
+            <StudentFeedback/>
+            <Reviews/>
+          </div>
+          <div style={{position:'sticky'}}>
+            <PreviewCourseCart/>
+          </div>
+        </div>
+        <Footer/>   
     </div>
   )
 }
