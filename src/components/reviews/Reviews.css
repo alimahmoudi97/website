@@ -1,0 +1,8 @@
+.reviews-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.review-user-container{
+    display: flex;
+}

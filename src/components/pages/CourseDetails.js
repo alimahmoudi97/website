@@ -8,6 +8,7 @@ import Header from '../header/Header';
 import InstructorInfo from '../instructors/InstructorInfo';
 import Instructors from '../instructors/Instructors';
 import Requirments from '../requirments/Requirments';
+import Reviews from '../reviews/Reviews';
 import StudentFeedback from '../student-feedback/StudentFeedback';
 import StudentsAlsoBought from '../students-also-bought/StudentsAlsoBought';
 import YouLearn from '../YouLearn/YouLearn.js';
@@ -26,6 +27,7 @@ function CourseDetails() {
         <BoughtTogether/>
         <Instructors/>
         <StudentFeedback/>
+        <Reviews/>
         {/* <InstructorInfo/> */}
         {/* <BoughtTogetherCart/> */}
     </div>
