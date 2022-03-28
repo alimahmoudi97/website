@@ -12,7 +12,7 @@ import Reviews from '../reviews/Reviews';
 import StudentFeedback from '../student-feedback/StudentFeedback';
 import StudentsAlsoBought from '../students-also-bought/StudentsAlsoBought';
 import YouLearn from '../YouLearn/YouLearn.js';
-
+import Footer from '../footer/Footer';
 
 function CourseDetails() {
   return (
@@ -28,6 +28,7 @@ function CourseDetails() {
         <Instructors/>
         <StudentFeedback/>
         <Reviews/>
+        <Footer/>
         {/* <InstructorInfo/> */}
         {/* <BoughtTogetherCart/> */}
     </div>
