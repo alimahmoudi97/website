@@ -32,7 +32,7 @@ function CourseDetails() {
             <StudentFeedback/>
             <Reviews/>
           </div>
-          <div style={{position:'sticky'}}>
+          <div style={{position:'absolute',right:100}}>
             <PreviewCourseCart/>
           </div>
         </div>

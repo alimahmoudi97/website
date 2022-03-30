@@ -3,7 +3,9 @@
     justify-content: center;
     width: 400px;
     /* background-color: rgb(161, 236, 99); */
-    box-shadow: 5px 5px 5px 5px royalblue;
+    box-shadow: 0 0 2px 2px rgb(212, 219, 241);
+    /* position:sticky;
+    top: 0; */
 }
 .preview-course-cart-details{
     margin-left: 20px;
