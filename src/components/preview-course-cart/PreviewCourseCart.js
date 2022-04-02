@@ -54,7 +54,7 @@ function PreviewCourseCart() {
                 </div>
             </div>
             <div style={{width:'100%',border:'1px solid'}}></div>
-            <div style={{width:'90%'}} className="preview-course-cart-details">
+            <div style={{width:'90%',height:'30%'}} className="preview-course-cart-details">
                 <p style={{fontSize:20,fontWeight:'bold'}}>Training 5 or more people?</p>
                 <p>Get your team access to 6,000+ top Udemy courses anytime, anywhere.</p>
                 <button className="btn-udemy-business">Try Udemy Business</button>
