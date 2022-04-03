@@ -67,18 +67,21 @@
     width: 600px;
 }
 .cart-shopping{
-    background-color:burlywood;
+    /* background-color:burlywood; */
     display: flex;
     align-items: center;
 }
+/* .cart-shopping-icon:hover{
+    background-color: aqua;
+} */
 .cart-shopping:hover .cart-shopping-review{
     display: block;
-    background-color: aqua;
-    width: 200px;
-    /* height: 20px; */
+    /* background-color: rgb(242, 247, 240); */
+    width: 300px;
+    height:300px;
     position:absolute;
     right: 200px;
-    margin-top: 220px;
+    margin-top: 350px;
     z-index: 1000;
     opacity: 1;
 }

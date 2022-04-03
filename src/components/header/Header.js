@@ -4,6 +4,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import {GrCart} from 'react-icons/gr';
 import Categories from './categories/categories';
 import SearchHeader from './search/searchHeader';
+import ItemsInCart from '../items-in-cart/ItemsInCart.js';
 import './header.css';
 function Header(){
     const [isShowCartShopping,setShowCartShopping]=useState(false);
@@ -27,15 +28,12 @@ function Header(){
                         <p>Tech On Udemy</p>
                     </div>
                     <div className="cart-shopping" onMouseEnter={()=>setShowCartShopping(true)} onMouseLeave={()=>setShowCartShopping(false)}>
-                       <GrCart style={{width:50,height:25}}/>
+                       <GrCart className="cart-shopping-icon" style={{width:50,height:25}}/>
                        {/* {
                            (isShowCartShopping) && <div className="cart-shopping-review"></div>
                        } */}
                        <div className="cart-shopping-review">
-                           <p>1</p>
-                           <p>2</p>
-                           <p>3</p>
-                           <p>4</p>
+                           <ItemsInCart/>
                        </div>
                     </div>
                 
