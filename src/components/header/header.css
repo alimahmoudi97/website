@@ -30,12 +30,12 @@
     /* background-color: bisque; */
     align-items: center;
 }
-.logo img{
+/* .logo img{ */
     /* align-self:center; */
     /* background-color: brown; */
     /* height:100%; */
     /* width: 100%; */
-}
+/* } */
 
 .div-categories{
     /* background-color: blueviolet; */
@@ -65,4 +65,23 @@
     justify-content: space-between;
     margin-left: 10px;
     width: 600px;
+}
+.cart-shopping{
+    background-color:burlywood;
+    display: flex;
+    align-items: center;
+}
+.cart-shopping:hover .cart-shopping-review{
+    display: block;
+    background-color: aqua;
+    width: 200px;
+    /* height: 20px; */
+    position:absolute;
+    right: 200px;
+    margin-top: 220px;
+    z-index: 1000;
+    opacity: 1;
+}
+.cart-shopping-review{
+    display: none;
 }

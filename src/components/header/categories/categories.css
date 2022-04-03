@@ -9,7 +9,7 @@
 .categories:hover .cart{
     display: block;
     /* position: relative; */
-    /* background-color: rgb(253, 253, 253); */
+    /* background-color: rgb(223, 75, 75); */
     position:absolute;
     margin-top: 220px;
     /* margin-right: 100px; */
