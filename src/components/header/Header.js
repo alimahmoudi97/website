@@ -21,17 +21,30 @@ function Header(){
             
             <div className="group-button">
 
-                    <div className="div-text">
+                    <div className="div-text-udemy-businuss">
                         <p>Udemy Businuss</p>
+                        <div className="udemy-businuss-header">
+                            <div className="udemy-businuss-header-container">
+                                <div style={{width:'90%',margin:10}}>
+                                    <p style={{fontSize:20,fontWeight:'bold'}}>Get your team access to over 6,000 top Udemy courses, anytime, anywhere.</p>
+                                    <button>Try Udemy Business</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="div-text">
+                    <div className="div-text-udemy-tech">
                         <p>Tech On Udemy</p>
+                        <div className="udemy-businuss-header">
+                            <div className="udemy-businuss-header-container">
+                                <div style={{width:'90%',margin:10}}>
+                                    <p style={{fontSize:20,fontWeight:'bold'}}>Turn what you know into an opportunity and reach millions around the world.</p>
+                                    <button>Learn more</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="cart-shopping" onMouseEnter={()=>setShowCartShopping(true)} onMouseLeave={()=>setShowCartShopping(false)}>
                        <GrCart className="cart-shopping-icon" style={{width:50,height:25}}/>
-                       {/* {
-                           (isShowCartShopping) && <div className="cart-shopping-review"></div>
-                       } */}
                        <div className="cart-shopping-review">
                            <ItemsInCart/>
                        </div>

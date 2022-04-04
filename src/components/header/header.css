@@ -10,7 +10,7 @@
     height: 70px;
     /* margin-top: 10px; */
 }
-.div-text{
+.div-text-udemy-businuss{
     /* background-color: blueviolet; */
     /* text-align:center; */
     height:60px;
@@ -19,7 +19,11 @@
     /* position: relative; */
     /* margin-left: 10px; */
 }
-
+.div-text-udemy-tech{
+    height:60px;
+    display: flex;
+    align-items:center;
+}
 .logo{
     width: 60px;
     height: 60px;
@@ -71,9 +75,7 @@
     display: flex;
     align-items: center;
 }
-/* .cart-shopping-icon:hover{
-    background-color: aqua;
-} */
+
 .cart-shopping:hover .cart-shopping-review{
     display: block;
     /* background-color: rgb(242, 247, 240); */
@@ -87,4 +89,41 @@
 }
 .cart-shopping-review{
     display: none;
+}
+
+.div-text-udemy-businuss:hover .udemy-businuss-header{
+    /* background-color: rgb(253, 24, 24); */
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    position: absolute;
+    margin-top: 285px;
+    right: 400px;
+    z-index: 1000;
+    /* opacity: 1; */
+}
+.div-text-udemy-tech:hover .udemy-businuss-header{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    position: absolute;
+    margin-top: 285px;
+    right: 250px;
+    z-index: 1000;
+}
+.udemy-businuss-header-container{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.udemy-businuss-header{
+    display:none;
+    
+}
+.udemy-businuss-header-container div button{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color:white;
 }
