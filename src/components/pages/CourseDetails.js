@@ -14,12 +14,13 @@ import StudentsAlsoBought from '../students-also-bought/StudentsAlsoBought';
 import YouLearn from '../YouLearn/YouLearn.js';
 import Footer from '../footer/Footer';
 import PreviewCourseCart from '../preview-course-cart/PreviewCourseCart';
+import Login from './Login';
 
 function CourseDetails() {
   return (
     <div>
         <Header/>
-        <div style={{display:'flex'}}>
+        {/* <div style={{display:'flex'}}>
           <div>
             <CourseTitle/>
             <YouLearn/>
@@ -35,7 +36,8 @@ function CourseDetails() {
           <div style={{position:'absolute',right:100}}>
             <PreviewCourseCart/>
           </div>
-        </div>
+        </div> */}
+        <Login/>
         <Footer/>   
     </div>
   )
