@@ -10,11 +10,19 @@ function CategoriesSubOne(){
     return(
         
             <ul onMouseEnter={()=>{if(isHoverSubThree){serHoverSubThree(false)}}}>
-                <li>Ali</li>
-                <li>Ali</li>
-                <li>Ali</li>
-                <li>Ali</li>
-                <li>Ali</li>
+                <li><p>Devolopment</p></li>
+                <li><p>Business</p></li>
+                <li><p>Finance & Accounting</p></li>
+                <li><p>It & Software</p></li>
+                <li><p>Office Productivity</p></li>
+                <li><p>Personal Development</p></li>
+                <li><p>Design</p></li>
+                <li><p>Marketing</p></li>
+                <li><p>Lifestyle</p></li>
+                <li><p>Photography and Video</p></li>
+                <li><p>Health & Fitness</p></li>
+                <li><p>Music</p></li>
+                <li><p>Teaching & Acadimics</p></li>
             </ul>
         
     )
@@ -26,11 +34,16 @@ function CategoriesSubTwo(){
     return(
         
             <ul >
-                <li onMouseEnter={()=>serHoverSubThree(true)}>Ali-1</li>
-                <li>Ali-2</li>
-                <li>Ali-3</li>
-                <li>Ali-4</li>
-                <li>Ali-5</li>
+                <li onMouseEnter={()=>serHoverSubThree(true)}><p>Web Development</p></li>
+                <li><p>Data Science</p></li>
+                <li><p>Mobile Development</p></li>
+                <li><p>Programming Languages</p></li>
+                <li><p>Game Development</p></li>
+                <li><p>Database Design & Development</p></li>
+                <li><p>Software Testing</p></li>
+                <li><p>Software Engineering</p></li>
+                <li><p>Software Development Tools</p></li>
+                <li><p>No-Code Development</p></li>
             </ul>
         
     )
