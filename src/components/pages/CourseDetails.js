@@ -15,6 +15,7 @@ import YouLearn from '../YouLearn/YouLearn.js';
 import Footer from '../footer/Footer';
 import PreviewCourseCart from '../preview-course-cart/PreviewCourseCart';
 import Login from './Login';
+import SignUp from './SignUp';
 
 function CourseDetails() {
   return (
@@ -37,7 +38,8 @@ function CourseDetails() {
             <PreviewCourseCart/>
           </div>
         </div> */}
-        <Login/>
+        {/* <Login/> */}
+        <SignUp/>
         <Footer/>   
     </div>
   )
