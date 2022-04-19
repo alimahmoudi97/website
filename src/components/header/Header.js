@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import {Link} from 'react-router-dom';
 import logo from './../../assets/logo-udemy.svg';
 import { AiOutlineSearch } from "react-icons/ai";
 import {GrCart} from 'react-icons/gr';
@@ -51,10 +52,15 @@ function Header(){
                     </div>
                 
                     <div className="button">
-                        <button id="A" type="button" title="name">Log in</button>
+                        
+                        <Link to="login">
+                            <button id="A" type="button" title="name">Log in</button>
+                        </Link>
                     </div>
                     <div className="button">
-                        <button id="B" type="button" title="name">Sign up</button>
+                        <Link to="signup">
+                            <button id="B" type="button" title="name">Sign up</button>
+                        </Link>
                     </div>
                     <div className="button">
                         <button id="C" type="button" title="name"> <img src={logo} alt="#"/> </button>

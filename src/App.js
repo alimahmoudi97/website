@@ -1,3 +1,4 @@
+import {Routes,Route} from 'react-router-dom';
 import Header from './components/header/Header'
 import Introduce from './components/Introduce/Introduce';
 import Courses from './components/courses/Courses';
@@ -13,11 +14,12 @@ import Footer from './components/footer/Footer.js';
 import './App.css';
 import CartBuy from './components/cart_buy/CartBuy';
 import CourseDetails from './components/pages/CourseDetails';
+import Login from './components/pages/Login';
+import SignUp from './components/pages/SignUp';
 
-function App() {
-  return (
+function Home(){
+  return(
     <div>
-      {/* <Header/>
       <Introduce/>
       <Courses/>
       <p className="students-view-text">Students are viewing</p>
@@ -34,8 +36,22 @@ function App() {
       <UdemyBusinessCart/>
       <TrustedCompanies/>
       <FindOutCart/>
-      <Footer/> */}
-      <CourseDetails/>
+    </div>
+  )
+}
+
+function App() {
+  return (
+    <div>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="coursedetails" element={<CourseDetails/>}/>
+        <Route path="login" element={<Login/>}/>
+        <Route path="signup" element={<SignUp/>}/>
+      </Routes>
+      <Footer/>
+      {/* <CourseDetails/> */}
   </div>
 
   );
