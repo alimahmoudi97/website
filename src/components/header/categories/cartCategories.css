@@ -14,3 +14,11 @@
     /* margin:0; */
     padding-right: 5px;
 }
+.title-categories-item{
+    display: flex;
+    justify-content:space-between;
+    line-height: 2rem;
+}
+.active-title-item{
+    color: aqua;
+}
