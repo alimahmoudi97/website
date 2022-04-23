@@ -4,8 +4,8 @@ import { AiOutlineSearch } from "react-icons/ai";
 const searchHeader=()=>{
     return(
         <div className="search">
-                <AiOutlineSearch style={{width:25,height:25,marginTop:22,marginLeft:20}}/>
-                <input placeholder="search..."/>
+                <AiOutlineSearch className="search-icon"/>
+                <input placeholder="Search for anything"/>
         </div>
     )
 }

@@ -6,6 +6,9 @@
     display: var(--display-blook);
     opacity: 0;
 }
+.categories{
+    cursor: pointer;
+}
 .categories:hover .cart{
     display: block;
     /* position: relative; */
@@ -17,7 +20,9 @@
     opacity: 1;
     z-index: 1;
 }
-
+.categories:hover span{
+    color: aqua;
+}
 .categorie-sub-two{
     /* display:flex; */
     /* position: relative; */

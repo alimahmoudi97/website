@@ -1,9 +1,11 @@
-.container{
-    background-color: rgb(242, 243, 233);
-    width: 250px;
+.container-cart-course{
+    /* background-color: rgb(242, 243, 233); */
+    /* position: relative;
+    float: left; */
+    /* width: 250px; */
 }
 .container img{
-    width: 250px;
+    /* width: 250px; */
     height: 150px;
     object-fit: cover;
 }
@@ -15,4 +17,32 @@
 }
 .items{
     background-color: rgb(233, 178, 178);
+}
+.cart-course-rating{
+    display: flex;
+    line-height: 1.6rem;
+}
+.cart-course-instuctors{
+    display: flex;
+}
+.cart-course-title{
+    display: flex;
+    white-space: normal;
+    text-align: left;
+}
+.cart-course-rating-student{
+    font-size: 14px;
+    text-align: center;
+}
+.cart-course-score{
+    font-size: 14px;
+    margin: 0;
+}
+.cart-course-price{
+    display: flex;
+    line-height: 1.6rem;
+}
+.cart-course-price span{
+    font-size: 16px;
+    font-weight: bold;
 }

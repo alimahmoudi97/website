@@ -13,7 +13,7 @@ function Categories(){
         <ContextCategories.Provider value={{subOne:[isHoverSubOne,serHoverSubOne],subTwo:[isHoverSubTwo,serHoverSubTwo],subThree:[isHoverSubThree,setHoverSubThree]}}>
             <div id="A" onMouseEnter={()=>{setHoverSubThree(false);document.getElementById("A").style.setProperty('--display-block','block')}}>
                 <p className="categories">
-                    Categories
+                    <span>Categories</span>
                     <div className="cart">
                         <CartCategories/>
                     </div>

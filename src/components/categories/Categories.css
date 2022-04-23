@@ -19,3 +19,7 @@
 .grid-item img:hover{
     transform: scale(1.04);
 }
+.top-categories-cart span{
+    font-size: 16px;
+    font-weight: bold;
+}

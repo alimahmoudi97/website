@@ -6,6 +6,9 @@ import {GrCart} from 'react-icons/gr';
 import Categories from './categories/categories';
 import SearchHeader from './search/searchHeader';
 import ItemsInCart from '../items-in-cart/ItemsInCart.js';
+import{GrLanguage} from 'react-icons/gr';
+
+
 import './header.css';
 function Header(){
     const [isShowCartShopping,setShowCartShopping]=useState(false);
@@ -23,9 +26,9 @@ function Header(){
             <div className="group-button">
 
                     <div className="div-text-udemy-businuss">
-                        <p>Udemy Businuss</p>
+                        <span>Udemy Businuss</span>
                         <div className="udemy-businuss-header">
-                            <div style={{border:'1px solid rgb(0,0,0,0.25)'}} className="udemy-businuss-header-container">
+                            <div className="udemy-businuss-header-container">
                                 <div style={{width:'90%',margin:10}}>
                                     <p style={{fontSize:20,fontWeight:'bold'}}>Get your team access to over 6,000 top Udemy courses, anytime, anywhere.</p>
                                     <button>Try Udemy Business</button>
@@ -34,7 +37,7 @@ function Header(){
                         </div>
                     </div>
                     <div className="div-text-udemy-tech">
-                        <p>Tech On Udemy</p>
+                        <span>Tech On Udemy</span>
                         <div className="udemy-businuss-header">
                             <div style={{border:'1px solid rgb(0,0,0,0.25)'}} className="udemy-businuss-header-container">
                                 <div style={{width:'90%',margin:10}}>
@@ -45,26 +48,31 @@ function Header(){
                         </div>
                     </div>
                     <div className="cart-shopping" onMouseEnter={()=>setShowCartShopping(true)} onMouseLeave={()=>setShowCartShopping(false)}>
-                       <GrCart className="cart-shopping-icon" style={{width:50,height:25}}/>
+                        <GrCart className="cart-shopping-icon"/>
                        <div className="cart-shopping-review">
                            <ItemsInCart/>
                        </div>
                     </div>
-                
-                    <div className="button">
-                        
-                        <Link to="login">
-                            <button id="A" type="button" title="name">Log in</button>
-                        </Link>
+                    <div className="button-header">
+                        <div className="button">
+                            
+                            <Link to="login">
+                                <button id="A" className="btn-login-header" type="button" title="name">Log in</button>
+                            </Link>
+                        </div>
+                        <div className="button">
+                            <Link to="signup">
+                                <button id="B" className="btn-signup-header" type="button" title="name">Sign up</button>
+                            </Link>
+                        </div>
+                        <div className="button">
+                            <Link to="/">
+                                <button id="C" className="btn-language" type="button" title="name"><GrLanguage/> </button>
+                            </Link>
+                            
+                        </div>
                     </div>
-                    <div className="button">
-                        <Link to="signup">
-                            <button id="B" type="button" title="name">Sign up</button>
-                        </Link>
-                    </div>
-                    <div className="button">
-                        <button id="C" type="button" title="name"> <img src={logo} alt="#"/> </button>
-                    </div>
+              
             </div>
                        
         </div>

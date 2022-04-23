@@ -3,5 +3,28 @@
     justify-content:end;
     background-color: rgb(255, 255, 255);
     width:340px;
-    height:480px;
+    border: 1px solid #d1d7dc;
+    /* height:480px; */
+}
+.heart-icon-cart{
+    /* margin-left: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d1d7dc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+.btn-add-to-cart{
+    border: 0;
+    background-color: rgb(152, 20, 252);
+    width: 75%;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+.btn-add-to-cart:hover{
+    background-color: rgb(121, 9, 206);
 }

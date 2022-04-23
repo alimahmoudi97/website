@@ -9,8 +9,8 @@ function CategoriesSubOne(){
     const[isHoverSubThree,serHoverSubThree]=subThree;
     return(
         
-            <ul onMouseEnter={()=>{if(isHoverSubThree){serHoverSubThree(false)}}}>
-                <li><p>Devolopment</p></li>
+            <ul className="list-categories-sub-one" onMouseEnter={()=>{if(isHoverSubThree){serHoverSubThree(false)}}}>
+                <li style={{display:'flex',justifyContent:'space-between'}}><p>Devolopment</p><p>&gt;</p></li>
                 <li><p>Business</p></li>
                 <li><p>Finance & Accounting</p></li>
                 <li><p>It & Software</p></li>
@@ -24,7 +24,6 @@ function CategoriesSubOne(){
                 <li><p>Music</p></li>
                 <li><p>Teaching & Acadimics</p></li>
             </ul>
-        
     )
 }
 function CategoriesSubTwo(){

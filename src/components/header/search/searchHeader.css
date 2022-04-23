@@ -1,18 +1,29 @@
 .search{
     background-color:white;
-    height: 60px;
-    width: 60%;
+    height: 50px;
+    width: 50%;
     display: flex;
+    /* justify-content: center; */
+    align-items: center;
     flex-direction: row;
-    border: 2px solid;
+    border: 1px solid;
     border-radius:50px;
     
 }
 .search input{
     margin :0 auto;
     width:90%;
+    height: 90%;
     border: 0;
     outline: 0;
-    margin-right: 30px;
-    font-size: large;
+    margin-right:2%;
+    font-size:14px;
+    /* background-color: brown; */
+}
+.search-icon{
+    /* background-color: aqua; */
+    margin-left: 2%;
+    width: 30px;
+    height: 30px;
+    cursor:no-drop;
 }

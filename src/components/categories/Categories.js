@@ -38,9 +38,9 @@ const data=[
 
 function Cart(props){
     return(
-        <div>
-            <img src={props.item.image}/>
-            <p style={{margin:0}}>{props.item.name}</p>
+        <div className="top-categories-cart">
+            <div><img src={props.item.image}/></div>
+            <span>{props.item.name}</span>
         </div>
     )
 }

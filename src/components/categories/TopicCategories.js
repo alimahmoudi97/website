@@ -8,11 +8,22 @@ const gridItem4=["Design","Photoshop","Graphic Design","Drawing"];
 
 function Item(props){
     return(
-        <div>
-            <p>{props.item[0]}</p>
-            <div><p><a href="https://www.w3schools.com/">{props.item[1]}</a></p></div>
-            <div><p> <a href="https://www.w3schools.com/">{props.item[2]}</a></p></div>
-            <div><p> <a href="https://www.w3schools.com/">{props.item[3]}</a></p></div>
+        <div className="item-topic-categories">
+            <div><span style={{fontSize:20,fontWeight:'bold'}}>{props.item[0]}</span></div>
+            <div >
+                <div className="item-topic"><span><a href="https://www.w3schools.com/">{props.item[1]}</a></span></div>
+                <span className="item-topic-students">10,000 Students</span>
+            </div>
+            <div>
+                <div className="item-topic"><span><a href="https://www.w3schools.com/">{props.item[1]}</a></span></div>
+                <span className="item-topic-students">10,000 Students</span>
+            </div>
+            <div>
+                <div className="item-topic"><span><a href="https://www.w3schools.com/">{props.item[1]}</a></span></div>
+                <span className="item-topic-students">10,000 Students</span>
+            </div>
+            {/* <div className="item-topic"><span><a href="https://www.w3schools.com/">{props.item[2]}</a></span></div>
+            <div className="item-topic"><span><a href="https://www.w3schools.com/">{props.item[3]}</a></span></div> */}
         </div>
     )
 }
@@ -20,7 +31,7 @@ function Item(props){
 function TopicCategories() {
   return (
       <div>
-        <p className="topic-categories-text">Featured topics by category</p>
+        <h1 className="topic-categories-text">Featured topics by category</h1>
         <div className="grid-container">
             <div className="grid-item"><Item item={gridItem1}/></div>
             <div className="grid-item"><Item item={gridItem2}/></div>

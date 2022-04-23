@@ -15,17 +15,17 @@ function TabPanel(props){
             {value === index && (
                 <div>
                     <Box sx={{ p: 3}}>
-                        <p style={{fontSize:20}}>
+                        <h2>
                             Expand your career opportunities with Python
-                        </p>
-                        <p>
+                        </h2>
+                        <p style={{width:'60%'}}>
                             Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to
                         </p>
                         
                     </Box>
 
                     <div style={{paddingLeft:22}}>
-                        <button style={{height:40}}>Python</button>
+                        <button className="btn-explore">Explore Python</button>
                     </div>
                     
                     <Box sx={{ p: 3}}>
@@ -55,38 +55,26 @@ function Courses(){
     return(
         <div className="container-courses">
             <div className="content">
-                <p style={{fontSize:25}}>A broad selection of courses</p>
+                <h1>A broad selection of courses</h1>
                 <p>Choose from 183,000 online video courses with new additions published every month</p>
                 <Box>
                     <Box sx={{borderBottom:1,borderColor:'divider'}}>
                         <AntTabs value={value} onChange={handleChange} textColor="secondary">
-                            <AntTab label="Item 1"/>
-                            <AntTab label="Item 2"/>
-                            <AntTab label="Item 3"/>
-                            <AntTab label="Item 4"/>
-                            <AntTab label="Item 5"/>
-                            <AntTab label="Item 6">Hi</AntTab>
+                            <AntTab label="Python"/>
+                            <AntTab label="Excel"/>
+                            <AntTab label="Web Development"/>
+                            <AntTab label="JavaScript"/>
+                            <AntTab label="Data Science"/>
+                            <AntTab label="AWS Certification">Hi</AntTab>
                         </AntTabs>
                     </Box>
-                    <Box sx={{border:1}}>
-                        <TabPanel value={value} index={0}>
-                                Item 1
-                            </TabPanel>
-                            <TabPanel value={value} index={1}>
-                                Item 2
-                            </TabPanel>
-                            <TabPanel value={value} index={2}>
-                                Item 3
-                            </TabPanel>
-                            <TabPanel value={value} index={3}>
-                                Item 4
-                            </TabPanel>
-                            <TabPanel value={value} index={4}>
-                                Item 5
-                            </TabPanel>
-                            <TabPanel value={value} index={5}>
-                                Item 6
-                            </TabPanel>
+                    <Box sx={{border:1,borderColor:'#d1d7dc',paddingBottom:10}}>
+                            <TabPanel value={value} index={0}/>
+                            <TabPanel value={value} index={1}/>
+                            <TabPanel value={value} index={2}/>
+                            <TabPanel value={value} index={3}/>
+                            <TabPanel value={value} index={4}/>
+                            <TabPanel value={value} index={5}/>
                     </Box>
                        
                 </Box>
@@ -110,11 +98,12 @@ const AntTab = styled((props) => <Tab disableRipple {...props} />)(({ theme }) =
     color: '#4d4d4d',
     '&:hover': {
       color: 'black',
-      fontSize:18
+      fontWeight:'bold',
     },
     '&.Mui-selected': {
       color: 'black',
-      fontWeight: theme.typography.fontWeightMedium,
+    //   fontSize:20,
+      fontWeight:'bold',
     },
 
   }));

@@ -22,12 +22,12 @@ function Home(){
     <div>
       <Introduce/>
       <Courses/>
-      <p className="students-view-text">Students are viewing</p>
+      <h2 className="students-view-text">Students are viewing</h2>
       <div className="students-view">
         <SliderCart/>
         
       </div>
-      <p className="students-view-text">Top Categories</p>
+      <h2 className="students-view-text">Top Categories</h2>
       <Categories/>
       <div style={{marginTop:50,backgroundColor:'white'}}>
         <TopicCategories/>

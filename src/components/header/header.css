@@ -1,14 +1,10 @@
 .header{
     display:flex;
-    background-color: rgb(236, 250, 245);
-    /* align-items: center; */
     justify-content:space-around;
     align-items:center;
-    /* align-content: stretch; */
-    /* gap: 60px; */
-    /* flex-wrap:wrap; */
     height: 70px;
-    /* margin-top: 10px; */
+    box-shadow: 0px 0px 8px 1px #837c7c;
+    z-index: 1000;
 }
 .div-text-udemy-businuss{
     /* background-color: blueviolet; */
@@ -16,17 +12,25 @@
     height:60px;
     display: flex;
     align-items:center;
+    cursor: pointer;
     /* position: relative; */
     /* margin-left: 10px; */
+}
+.div-text-udemy-businuss:hover span{
+    color: aqua;
 }
 .div-text-udemy-tech{
     height:60px;
     display: flex;
     align-items:center;
+    cursor: pointer;
+}
+.div-text-udemy-tech:hover span{
+    color: aqua;
 }
 .logo{
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    /* height: 80px; */
     display:flex;
     margin-left: 20px;
     /* align-self:center; */
@@ -59,11 +63,7 @@
     /* width: 100%; */
 }
 
-.button #A,#B,#C{
-    width: 80px;
-    height: 50px;
-    /* background-color: rgb(2, 252, 127); */
-}
+
 .group-button{
     display:flex;
     flex-direction: row;
@@ -75,6 +75,7 @@
     /* background-color:burlywood; */
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .cart-shopping:hover .cart-shopping-review{
@@ -87,7 +88,13 @@
     margin-top: 350px;
     z-index: 1000;
     opacity: 1;
+    
 }
+.cart-shopping-icon{
+    width:50px;
+    height:25px;
+}
+
 .cart-shopping-review{
     display: none;
 }
@@ -117,6 +124,7 @@
     width: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
+    border: 1px solid rgb(0,0,0,0.25);
 }
 .udemy-businuss-header{
     display:none;
@@ -127,4 +135,41 @@
     height: 50px;
     background-color: black;
     color:white;
+}
+.btn-language{
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    background-color: white;
+    cursor: pointer;
+}
+.btn-signup-header{
+    width: 90px;
+    height: 40px;
+    border: 1px solid gray;
+    background-color:black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    /* margin-right: 10px; */
+}
+.btn-login-header{
+    width: 90px;
+    height: 40px;
+    border: 1px solid gray;
+    background-color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-language:hover,.btn-login-header:hover{
+    background-color: #e0d9d9;
+}
+.button-header{
+    display: flex;
+    width: 230px;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+
 }

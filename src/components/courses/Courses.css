@@ -8,3 +8,12 @@
     /* background-color: rgb(131, 192, 18); */
     width: 75%;
 }
+.btn-explore{
+    height: 40px;
+    border: 1px solid;
+    background-color: white;
+    cursor: pointer;
+}
+.btn-explore:hover{
+    background-color: rgb(236, 236, 236);
+}

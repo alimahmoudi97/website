@@ -17,12 +17,24 @@
     height:40px;
     margin-top: 40px;
     margin-left: 220px;
-    /* border: 1px solid; */
+    border: 1px solid;
     /* font-size: large; */
+    background-color: white;
     font-weight: bold;
+    cursor: pointer;
+}
+.btnmore-topic:hover{
+    background-color: rgb(240, 243, 247);
 }
 .topic-categories-text{
     font-size: 24px;
     font-weight: bold;
     margin-left: 220px;
+}
+.item-topic span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.item-topic-students{
+    font-size: 16px;
 }
