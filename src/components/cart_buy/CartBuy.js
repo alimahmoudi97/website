@@ -1,8 +1,12 @@
 import React from 'react';
+import { useSelector,useDispatch } from 'react-redux';
+import { decrement,increment } from '../../app/buyCoursesSlice';
 import{BsHeart} from 'react-icons/bs';
 import './CartBuy.css';
 
 function CartBuy() {
+    
+    const dispatch=useDispatch();
   return (
     <div className="cart-buy-course">
         <div style={{marginLeft:20}}>
@@ -44,7 +48,7 @@ function CartBuy() {
                 </span>
             </div>
             <div style={{display:'flex',height:50,marginBottom:10,marginTop:20}}>
-                <button className="btn-add-to-cart">Add to cart</button>
+                <button className="btn-add-to-cart" onClick={()=>dispatch(increment())}>Add to cart</button>
                 <div className="heart-icon-cart"><BsHeart style={{width:30,height:30}}/></div>
             </div>
         </div>

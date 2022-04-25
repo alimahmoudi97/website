@@ -1,13 +1,15 @@
 import React from 'react';
 import './ItemsInCart.css';
+import { useSelector} from 'react-redux';
+
 function ItemsInCart() {
   const data=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
-  
+  const count=useSelector(state=>state.counter.amountsOfCourses);
   return (
     <div className="items-in-cart-container">
       <div className="items-in-cart-list">
         {
-          data.map((value,index)=>{
+          data.slice(0,count).map((value,index)=>{
             return(
                   <div style={{display:'flex'}}>
                   <div>

@@ -7,10 +7,13 @@ import Categories from './categories/categories';
 import SearchHeader from './search/searchHeader';
 import ItemsInCart from '../items-in-cart/ItemsInCart.js';
 import{GrLanguage} from 'react-icons/gr';
-
-
+import Badge from '@mui/material/Badge';
+import { useSelector} from 'react-redux';
 import './header.css';
+
+
 function Header(){
+    const count=useSelector(state=>state.counter.amountsOfCourses);
     const [isShowCartShopping,setShowCartShopping]=useState(false);
     return(
         <div className="header">
@@ -48,10 +51,13 @@ function Header(){
                         </div>
                     </div>
                     <div className="cart-shopping" onMouseEnter={()=>setShowCartShopping(true)} onMouseLeave={()=>setShowCartShopping(false)}>
-                        <GrCart className="cart-shopping-icon"/>
-                       <div className="cart-shopping-review">
-                           <ItemsInCart/>
-                       </div>
+                        <Badge badgeContent={count} color="primary">
+                            <GrCart className="cart-shopping-icon"/>
+                        </Badge>
+                        
+                        <div className="cart-shopping-review">
+                            <ItemsInCart/>
+                        </div>
                     </div>
                     <div className="button-header">
                         <div className="button">
