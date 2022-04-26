@@ -1,4 +1,7 @@
 import React from 'react';
+import{MdOutlineEmail} from 'react-icons/md';
+import{RiLockPasswordLine} from 'react-icons/ri';
+import{BsFillPersonFill} from 'react-icons/bs';
 import './SignUp.css';
 
 function SignUp() {
@@ -7,11 +10,23 @@ function SignUp() {
         <div className="sign-up-detiales">
             <p style={{fontSize:16,fontWeight:'bold',marginLeft:10}}>Sign Up and Start Learning!</p>
             <div style={{borderBottom:'1px solid rgba(0,0,0,.25)'}}></div>
-            <div style={{marginLeft:20}}>
+            <div style={{marginLeft:20,width:'90%'}}>
                 <div>
-                    <input className="email-input" placeholder="Full name"/>
-                    <input className="email-input" placeholder="email"/>
-                    <input className="password-input" placeholder="password"/>
+                    <div className="inputs-container">
+                        <div className="email-input-container">
+                            <BsFillPersonFill  className="email-login-icon"/>
+                            <input className="email-input" placeholder="Full name"/>
+                        </div>
+                      <div className="email-input-container">
+                        <MdOutlineEmail  className="email-login-icon"/>
+                        <input className="email-input" placeholder="Email"/>
+                      </div>
+                      <div className="password-input-container">
+                        <RiLockPasswordLine className="password-login-icon"/>
+                        <input className="password-input" placeholder="Password"/>
+                      </div>
+                        
+                    </div>
                     <div className="sign-up-conditions">
                         <input type="checkbox"/>
                         <p>Yes! I want to get the most out of Udemy by receiving emails with exclusive deals, personal recommendations and learning tips!</p>

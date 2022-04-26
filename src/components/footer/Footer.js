@@ -38,7 +38,7 @@ function FooterItem(props){
 }
 function Footer() {
   return (
-      <div className="Footer-container">
+      <footer className="Footer-container">
           <div style={{marginLeft:30,marginRight:30}}>
             <div style={{display:'flex',justifyContent:'space-between'}}>
                 <div className="Footer-container-grid">
@@ -58,7 +58,7 @@ function Footer() {
                 </p>
             </div>
         </div>
-      </div>
+      </footer>
   )
 }
 
