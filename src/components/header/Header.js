@@ -17,9 +17,11 @@ function Header(){
     const [isShowCartShopping,setShowCartShopping]=useState(false);
     return(
         <div className="header">
-            <div className="logo">
-                <img src={logo} alt="#"/>
-            </div>
+            <Link to="/">
+                <div className="logo">
+                    <img src={logo} alt="#"/>
+                </div>
+            </Link>
             <div className="div-categories">
                 <Categories className="categories"/>
             </div>

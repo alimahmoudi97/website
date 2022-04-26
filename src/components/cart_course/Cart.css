@@ -1,8 +1,5 @@
 .container-cart-course{
-    /* background-color: rgb(242, 243, 233); */
-    /* position: relative;
-    float: left; */
-    /* width: 250px; */
+    cursor: pointer;
 }
 .container img{
     /* width: 250px; */

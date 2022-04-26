@@ -12,15 +12,11 @@ import Reviews from '../reviews/Reviews';
 import StudentFeedback from '../student-feedback/StudentFeedback';
 import StudentsAlsoBought from '../students-also-bought/StudentsAlsoBought';
 import YouLearn from '../YouLearn/YouLearn.js';
-import Footer from '../footer/Footer';
 import PreviewCourseCart from '../preview-course-cart/PreviewCourseCart';
-import Login from './Login';
-import SignUp from './SignUp';
 
 function CourseDetails() {
   return (
     <div>
-        <Header/>
         <div style={{display:'flex'}}>
           <div>
             <CourseTitle/>
@@ -37,10 +33,7 @@ function CourseDetails() {
           <div style={{position:'absolute',right:100}}>
             <PreviewCourseCart/>
           </div>
-        </div>
-        {/* <Login/> */}
-        {/* <SignUp/> */}
-        <Footer/>   
+        </div>  
     </div>
   )
 }

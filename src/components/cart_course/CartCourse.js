@@ -1,9 +1,11 @@
 import React from 'react';
 import Rating from '@mui/material/Rating';
 import './Cart.css';
+import { Link } from 'react-router-dom';
 
 function CartCourse(){
     return(
+        <Link to="coursedetails" style={{ textDecoration: 'none',color: 'inherit' }}>
             <div className="container-cart-course">
                 <img src="https://www.thinkific.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/06/Create-Online-Courses-10.jpg.webp" alt="#"/>
                 <div className="cart-course-title">
@@ -31,6 +33,7 @@ function CartCourse(){
                     <span>&euro;95.99</span>
                 </div>
             </div>
+        </Link>
     );
 }
 
