@@ -11,6 +11,7 @@
 .sign-up-container{
     display: flex;
     justify-content: center;
+    margin: 30px;
 }
 .sign-up-detiales{
     width: 360px;

@@ -1,5 +1,9 @@
 .Footer-container{
     background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom:0;
+    left:0;
+    right: 0;
 }
 .Footer-container a{
     color: white;

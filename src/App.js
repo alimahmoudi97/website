@@ -42,7 +42,7 @@ function Home(){
 
 function App() {
   return (
-    <div>
+    <div style={{position:'relative',paddingBottom:300}}>
       <Header/>
       <Routes>
         <Route path="/" element={<Home/>}/>
