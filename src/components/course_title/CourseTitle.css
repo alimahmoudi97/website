@@ -6,3 +6,17 @@
 .course-title-text p{
     color: 'white';
 }
+.last-update-container,.language-course-title-container,.language-subtitle-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.language-course-title-container,.language-subtitle-title-container{
+    margin-left:30px;
+}
+.rate-course-title{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}

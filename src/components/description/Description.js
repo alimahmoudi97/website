@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import{MdKeyboardArrowDown} from 'react-icons/md';
 import './Description.css';
 function Description() {
 
@@ -7,7 +8,7 @@ function Description() {
   return (
     <div className="description-container">
         <div style={{width:'35%'}}>
-            <p style={{fontWeight:'bold',fontSize:20}}>Description</p>
+            <h2>Description</h2>
             <div className="description-contents">
                 <p>Do you want to become a programmer? Do you want to learn how to create games, automate your browser, visualize data, and much more?
 
@@ -31,9 +32,33 @@ function Description() {
             <div>
                 {
                     (isShowMore) ?
-                    <button style={{position:'relative',Top:20}} onClick={()=>{setShowMore(false);document.documentElement.style.setProperty("--max-height-contents","100%");document.documentElement.style.setProperty("--overflow-contents","visibale")}}>Show More</button>
+                    <div className="show-content-description-buttom"
+                        onClick={()=>{
+                            setShowMore(false);
+                            document.documentElement.style.setProperty("--max-height-contents","100%");
+                            document.documentElement.style.setProperty("--overflow-contents","visibale")
+                        }}
+                    >
+                        <span>
+                            Show More
+                        </span>
+                        <MdKeyboardArrowDown style={{width:20,height:20}}/>
+                    </div>
+
                     :
-                    <button style={{position:'relative',Top:20}} onClick={()=>{setShowMore(true);document.documentElement.style.setProperty("--max-height-contents","250px");document.documentElement.style.setProperty("--overflow-contents","hidden")}}>Show Less</button>
+                    <div className="show-content-description-buttom" 
+                        onClick={()=>{
+                            setShowMore(true);
+                            document.documentElement.style.setProperty("--max-height-contents","250px");
+                            document.documentElement.style.setProperty("--overflow-contents","hidden")
+                        }}
+                        >
+                        <span>
+                            Show Less
+                        </span>
+                        <MdKeyboardArrowDown style={{width:20,height:20}}/>
+                    </div>
+
                 }
                 
             </div>

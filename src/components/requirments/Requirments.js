@@ -4,7 +4,7 @@ function Requirments() {
   return (
     <div className="requirments-course">
         <div style={{width:'35%'}}>
-            <p style={{fontWeight:'bold',fontSize:20}}>Requirments</p>
+            <h2>Requirments</h2>
             <div className="lsit-requirments-course">
                 <ul>
                     <li><p>Macintosh (OSX)/ Windows(Vista and higher) Machine</p></li>

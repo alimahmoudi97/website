@@ -22,3 +22,11 @@
     background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgb(255, 255, 255,1) 90%);
     pointer-events: none;
 }
+.show-content-description-buttom{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* top: 20px; */
+    cursor: pointer;
+    color: #5624d0;
+}
