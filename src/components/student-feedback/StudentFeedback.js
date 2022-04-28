@@ -1,42 +1,59 @@
 import React from 'react';
+import Rating from '@mui/material/Rating';
 import './StudentFeedback.css';
 
 function StudentFeedback() {
   return (
     <div className="student-feedback-container">
         <div style={{width:'35%'}}>
-            <p style={{fontSize:16,fontWeight:'bold'}}>Student feedback</p>
+            <h2>Student feedback</h2>
             <div className="student-feedback-rate">
-                <div>
-                    <p>4.3</p>
-                    <p>*******</p>
-                    <p>Course Rating</p>
+                <div style={{display:'flex',flexDirection:'column',alignItems:'center',color:'#b4690e'}}>
+                    <span className="avrage-student-feedback-amount">4.3</span>
+                    <span className="avarage-student-feedback-rate"><Rating  value={4} readOnly/></span>
+                    <span>Course Rating</span>
                 </div>
-                <div style={{marginLeft:20,height:50}}> 
-                    <div style={{display:'flex'}}>
-                        <p style={{margin:0}}>[**************************----------]</p>
-                        <p style={{margin:0}}>@ @ @ @ @</p>
-                        <p style={{margin:0}}>43%</p>
+                <div style={{marginLeft:20}}> 
+                    <div className="review-student-feedback">
+                        <span className="slide-bar-student-feedback">
+                            <span className="slide-bar-student-feedback-amount" style={{width:'70%'}}></span>
+                        </span>
+                        <Rating size="small" value={4} readOnly/>
+                        <span style={{color:"#5624d0"}}>73%</span>
                     </div>
-                    <div style={{display:'flex'}}>
-                        <p style={{margin:0}}>[*****************-------------------]</p>
-                        <p style={{margin:0}}>@ @ @ @ @</p>
-                        <p style={{margin:0}}>43%</p>
+                    <div className="review-student-feedback">
+                        <span className="slide-bar-student-feedback">
+                            <span className="slide-bar-student-feedback-amount" style={{width:'43%'}}></span>
+                        </span>
+                        <Rating size="small" value={3} readOnly/>
+                        <span style={{color:"#5624d0"}}>43%</span>
                     </div>
-                    <div style={{display:'flex'}}>
-                        <p style={{margin:0}}>[********----------------------------]</p>
-                        <p style={{margin:0}}>@ @ @ @ @</p>
-                        <p style={{margin:0}}>43%</p>
+                    <div className="review-student-feedback">
+                        <span className="slide-bar-student-feedback">
+                            <span className="slide-bar-student-feedback-amount" style={{width:'23%'}}></span>
+                        </span>
+                        <Rating size="small" value={2} readOnly/>
+                        <span style={{color:"#5624d0"}}>23%</span>
                     </div>
-                    <div style={{display:'flex'}}>
-                        <p style={{margin:0}}>[***---------------------------------]</p>
-                        <p style={{margin:0}}>@ @ @ @ @</p>
-                        <p style={{margin:0}}>43%</p>
+                    <div className="review-student-feedback">
+                        <span className="slide-bar-student-feedback">
+                            <span className="slide-bar-student-feedback-amount" style={{width:'13%'}}></span>
+                        </span>
+                        <Rating size="small" value={2} readOnly/>
+                        <span style={{color:"#5624d0"}}>13%</span>
                     </div>
-                    <div style={{display:'flex'}}>
-                        <p style={{margin:0}}>[*-----------------------------------]</p>
-                        <p style={{margin:0}}>@ @ @ @ @</p>
-                        <p style={{margin:0}}>43%</p>
+                    <div className="review-student-feedback">
+                        <span className="slide-bar-student-feedback">
+                            <span className="slide-bar-student-feedback-amount" style={{width:'5%'}}></span>
+                        </span>
+                        <div>
+                            <Rating size="small" value={0} readOnly/>
+                        </div>
+                        
+                        <div>
+                            <span style={{color:"#5624d0"}}>3%</span>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

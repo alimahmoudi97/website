@@ -29,3 +29,20 @@
 .avatar-info{
     height: 30%;
 }
+.instructor-info-title{
+    display: flex;
+    flex-direction: column;
+}
+.instructor-position{
+    color:#6a6f73;
+    margin-top:10px;
+}
+.instructor-name{
+    color:#5624d0;
+    text-decoration: underline;
+    text-underline-offset:0.4rem;
+    cursor: pointer;
+}
+.instructor-info-container{
+    margin-top:20px;
+}

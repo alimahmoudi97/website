@@ -7,7 +7,7 @@
     width: 100%;
 }
 .student-also-bought-courses .line{
-    border: 1px solid;
+    border-bottom: 1px solid #d1d7dc;
     margin-top: 10px;
 }
 .btn-show-more-students-bought{

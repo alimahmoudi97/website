@@ -9,7 +9,7 @@ function StudentsAlsoBought() {
     return (
         <div className="student-also-bought-container">
             <div style={{width:'35%'}}>
-                <p style={{fontWeight:'bold',fontSize:20}}>Students Also Bought</p>
+                <h2>Students Also Bought</h2>
                 <div className="student-also-bought-courses">
                     {
                         data.slice(0,itemsToShow).map((value,index)=>{

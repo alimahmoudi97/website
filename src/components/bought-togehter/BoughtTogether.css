@@ -7,3 +7,15 @@
     display: flex;
     justify-content: center;
 }
+.btn-bought-together{
+    border: 0;
+    color: #fff;
+    background-color: #a435f0;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-bought-together:hover{
+    background-color: #9422e0;
+}

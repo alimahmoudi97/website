@@ -1,12 +1,16 @@
 import React,{useState} from 'react';
+import{MdKeyboardArrowDown} from 'react-icons/md';
 import './InstructorInfo.css';
 
 function InstructorInfo() {
     const [isShowMore,setShowMore]=useState(true);
   return (
     <div className="instructor-info-container">
-        <p style={{fontSize:16,fontWeight:'bold'}}>Avanish John</p>
-        <p>CEO of TheCodex.me - Teaching 500,000+ Students how to code</p>
+        <div className="instructor-info-title">
+            <a href='#' className="instructor-name">Avanish John</a>
+            <span className="instructor-position">CEO of TheCodex.me - Teaching 500,000+ Students how to code</span>
+        </div>
+
         <div className="avatar-info">
             <div>
                 <img style={{height:'inherit'}}  className="avatar-image" src="https://img-b.udemycdn.com/user/200_H/10260436_946b_6.jpg"/>
@@ -34,11 +38,34 @@ function InstructorInfo() {
         <div>
                 {
                     (isShowMore) ?
-                    <button style={{position:'relative',Top:10}} onClick={()=>{setShowMore(false);document.documentElement.style.setProperty("--max-height-contents-instructors","100%");document.documentElement.style.setProperty("--overflow-contents-instructors","visibale")}}>Show More</button>
+
+                    <div className="show-content-description-buttom"
+                    onClick={()=>{
+                        setShowMore(false);
+                        document.documentElement.style.setProperty("--max-height-contents-instructors","100%");
+                        document.documentElement.style.setProperty("--overflow-contents-instructors","visibale")
+                    }}
+                    >
+                        <span>
+                            Show More
+                        </span>
+                        <MdKeyboardArrowDown style={{width:20,height:20}}/>
+                    </div>
+
                     :
-                    <button style={{position:'relative',Top:10}} onClick={()=>{setShowMore(true);document.documentElement.style.setProperty("--max-height-contents-instructors","150px");document.documentElement.style.setProperty("--overflow-contents-instructors","hidden")}}>Show Less</button>
+                    <div className="show-content-description-buttom" 
+                        onClick={()=>{
+                            setShowMore(true);
+                            document.documentElement.style.setProperty("--max-height-contents-instructors","150px");
+                            document.documentElement.style.setProperty("--max-height-contents-instructors","hidden")
+                        }}
+                        >
+                            <span>
+                                Show Less
+                            </span>
+                            <MdKeyboardArrowDown style={{width:20,height:20}}/>
+                    </div>
                 }
-                
             </div>
     </div>
   )

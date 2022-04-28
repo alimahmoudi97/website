@@ -25,7 +25,9 @@ function CourseDetails() {
             <Requirments/>
             <Description/>
             <StudentsAlsoBought/>
-            <BoughtTogether/>
+            <div style={{marginTop:20}}>
+              <BoughtTogether/>
+            </div>
             <Instructors/>
             <StudentFeedback/>
             <Reviews/>

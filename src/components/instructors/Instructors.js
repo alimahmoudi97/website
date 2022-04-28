@@ -6,7 +6,7 @@ function Instructors() {
   return (
     <div className="instructors-container">
         <div style={{width:'38%',marginTop:20}}>
-            <p style={{fontWeight:'bold',marginLeft:30,fontSize:20}}>Instructors</p>
+            <h2 style={{marginLeft:30}}>Instructors</h2>
             <div style={{marginLeft:30}}>
                 <InstructorInfo/>
                 <InstructorInfo/>
