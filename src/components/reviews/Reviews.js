@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import { FiSearch } from 'react-icons/fi';
 import {AiOutlineLike,AiOutlineDislike} from 'react-icons/ai';
+import Rating from '@mui/material/Rating';
 
 import './Reviews.css';
 
@@ -8,27 +9,36 @@ function ReviewUser(){
     return(
         <div>
             <div className="review-user-container">
-                <div>
-                    <p style={{borderRadius:'50%',width:50,height:50}}>AM</p>
+                <div className="review-user-avatar-container">
+                    <div className="review-user-avatar">
+                        AM
+                    </div>
                 </div>
+
                 <div className="review-user-info">
-                    <div>
-                        <p>Ali Mahmoudi</p>
+                    <div className="review-username">
+                        <span>Ali Mahmoudi</span>
                     </div>
-                    <div style={{display:'flex'}}>
-                        <p style={{marginTop:0}}>* * * * *</p>
-                        <p style={{marginTop:0}}>2 years ago</p>
+                    <div style={{display:'flex',marginTop:5}}>
+                        
+                        <Rating value={3} size="medium" readOnly/>
+                        
+                        <span style={{marginTop:0}}>2 years ago</span>
                     </div>
-                    <p style={{marginTop:20}}>Up until now it is good that it is literally starting from scratch which is just what I was looking for. Let's see how it continues :)</p>
-                    <p>Was this review helpful?</p>
-                    <div style={{display:'flex'}}>
-                        <AiOutlineLike style={{width:30,height:30,marginTop:10}}/>
-                        <AiOutlineDislike style={{width:30,height:30,marginTop:10}}/>
-                        <p style={{marginLeft:20}}>Report</p>
+                    <p style={{marginTop:5}}>Up until now it is good that it is literally starting from scratch which is just what I was looking for. Let's see how it continues :)</p>
+                    <span>Was this review helpful?</span>
+                    <div style={{display:'flex',alignItems:'center',marginBottom:10,marginTop:10}}>
+                        <div className="review-like">
+                            <AiOutlineLike style={{width:30,height:30}}/>
+                        </div>
+                        <div className="review-dislike" style={{marginLeft:5}}>
+                            <AiOutlineDislike style={{width:30,height:30}}/>
+                        </div>
+                        
+                        <span style={{marginLeft:20}}>Report</span>
                     </div>
                 </div>
             </div>
-            <div style={{border:'1px solid'}}></div>
         </div>
 
     );
@@ -41,11 +51,13 @@ function Reviews() {
   return (
     <div className="reviews-container">
         <div style={{width:'35%'}}>
-            <p style={{fontSize:16,fontWeight:'bold'}}>Reviews</p>
+            <h2>Reviews</h2>
             <div style={{display:'flex'}}>
-                <input style={{width:400,height:40,fontSize:18}} placeholder="Search reviews"/>
-                <FiSearch style={{width:40,height:45}}/>
-                <select style={{marginLeft:100}}>
+                <form className="search-reviews-input-form">
+                    <input style={{width:400,fontSize:18}} placeholder="Search reviews"/>
+                    <FiSearch style={{width:50,height:'100%',backgroundColor:'black',color:'white'}}/>
+                </form>
+                <select style={{marginLeft:100,fontSize:15}}>
                     <option>All ratings</option>
                     <option>Five star</option>
                     <option>Four star</option>
