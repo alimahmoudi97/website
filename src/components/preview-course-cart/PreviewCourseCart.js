@@ -11,9 +11,9 @@ function PreviewCourseCart() {
   return (
     <div className="preview-course-cart-container">
         <div>
-            <img style={{width:400,height:300}} src="https://images.unsplash.com/photo-1559583985-c80d8ad9b29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxMDY1OTc2fHxlbnwwfHx8fA%3D%3D&w=1000&q=80"/>
+            <img style={{width:'100%',height:'20%'}} src="https://images.unsplash.com/photo-1559583985-c80d8ad9b29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxMDY1OTc2fHxlbnwwfHx8fA%3D%3D&w=1000&q=80"/>
             <div style={{width:'90%'}} className="preview-course-cart-details">
-                <p style={{fontSize:20,fontWeight:'bold'}}>94.55$</p>
+                <span style={{fontSize:20,fontWeight:'bold'}}>94.55$</span>
                 <div style={{display:'flex'}}>
                     <button className="btn-pre-add-cart">Add to cart</button>
                     <div className="heart-container">
