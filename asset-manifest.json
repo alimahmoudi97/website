@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.f2cf7d0d.css",
+    "main.js": "/website/static/js/main.2c1d0be1.js",
+    "static/js/787.76826462.chunk.js": "/website/static/js/787.76826462.chunk.js",
+    "static/media/logo-udemy.svg": "/website/static/media/logo-udemy.83ca61464031c0efceb5394719203673.svg",
+    "index.html": "/website/index.html",
+    "main.f2cf7d0d.css.map": "/website/static/css/main.f2cf7d0d.css.map",
+    "main.2c1d0be1.js.map": "/website/static/js/main.2c1d0be1.js.map",
+    "787.76826462.chunk.js.map": "/website/static/js/787.76826462.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2cf7d0d.css",
+    "static/js/main.2c1d0be1.js"
+  ]
+}
