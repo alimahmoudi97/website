@@ -1,9 +1,0 @@
-:root{
-    --postion-scroll:absolte;
-}
-.sidebar-container{
-    position:var(--postion-scroll);
-    display: block;
-    /* width: 300px; */
-    background-color:bisque;
-}
